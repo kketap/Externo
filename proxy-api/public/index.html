@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Externo</title>
   <link rel="stylesheet" href="style.css"> <!--css-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"> <!-- Google Fonts -->
 </head>
-<body>
-  <h1>Distribuidora Mayorista</h1>
 
-  <div class="productos" id="productos-container"></div><!--container de los productos-->
-  <script src="main.js"></script><!--script front js-->
+<!-- NavBar -->
+<div class="topnav">
+  <a class="active" href="#home">Página Principal</a>
+  <a href="#news">Noticias</a>
+  <a href="#contact">Contáctanos</a>
+  <a href="#about">Sobre Nosotros...</a>
+</div>
+
+<body>
+
+  <!-- Contenedor de productos -->
+   <header><h1>Distribuidora Hermanos Rodriguez</h1></header>
+  <hr>
+  <div class="productos" id="productos-container"></div>
+
+  <!-- Carrito de compras -->
+  <hr>
+  <div id="carrito" class="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p><strong>Total: $<span id="total">0</span></strong></p>
+    <button id="boton-comprar">Comprar</button>
+    <p id="mensaje-compra"></p>
+  </div>
+  
+  <!-- Librerias JS PDF-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+
+  <!-- Script Main JavaScript -->
+  <script src="main.js"></script>
+  <!-- Script Carrito -->
+  <script src="carrito.js"></script>
+  <!-- Script Btn y Factura Compra -->
+  <script src="comprar.js"></script>
 </body>
+
 </html>
