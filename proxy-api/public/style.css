@@ -74,6 +74,7 @@ h1 {
 .card p {
   margin: 5px 0;
   font-size: 0.95rem;
+  text-align: justify;
 }
 
 .precio {
@@ -82,9 +83,11 @@ h1 {
 
 .producto-imagen {
   width: 100%;
-  max-height: 250px;
+  height: 200px;
   object-fit: contain;
-  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  
 }
 
 .card:hover {
@@ -124,12 +127,15 @@ h1 {
 
 .agregar-carrito {
   margin-top: 10px;
-  padding: 8px 12px;
+  padding: 10px 16px;
   background-color: #007bff;
   border: none;
   color: white;
   border-radius: 6px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  position: static;
 }
 
 .agregar-carrito:hover {

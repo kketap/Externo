@@ -33,7 +33,7 @@ async function cargarProductos() {
         <p><strong>Descripción:</strong> ${producto.descripcion}</p>
         <p class="precio">Precio Mayorista: $${producto.precio_mayorista.toLocaleString()}</p>
         <p><strong>Stock:</strong> ${producto.stock}</p>
-        <img src="${imagenURL}" alt="Imagen no disponible" class="producto-imagen" />
+        <img src="${producto.imagen}" alt="Imagen no disponible" class="producto-imagen" />
         <button class="agregar-carrito">Agregar al carrito</button>
         `;
 

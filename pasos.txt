@@ -1,6 +1,5 @@
 Pasos a seguir en la Terminal
-npm install
-cd prox-api
+cd proxy-api
 npm init -y
 npm install express cors node-fetch
 node server.js
